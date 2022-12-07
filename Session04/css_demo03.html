@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 5px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuộc tính định dạng text</title>
+</head>
+<body>
+    <style>
+        /* Định kiểu phần tử zone01 có màu theo mã màu */
+        /* zone01 có font chữ là time new roman */
+        /* zone01 có kích thước chữ là 30px */
+        /* Đơn vị kích cỡ hay sử dụng: 
+            - px: điểm ảnh 
+            - %: % theo phần tử cha
+            - rem: tính theo font-size của phần tử html
+            - em 
+        */
+        /* font-style - Kiểu chữ */
+        /* font-weight - Độ đậm của chữ */
+        #zone01{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            font-style: oblique;
+            font-variant: small-caps;
+            font-weight: 900;
+            letter-spacing: 5px;
+            text-decoration: underline;
+        }
+        /* Định kiểu phần tử zone02 có màu theo rgb */
+        #zone02{
+            color: rgb(22, 184, 184);
+            font-size: 5rem;
+            word-spacing: 5px;
+        }
+        /* Định kiểu phần tử zone03 có màu theo tên */
+        #zone03{
+            color: red;
+            font-size: 4em;
+        }
+    </style>
+    <p id="zone01">Đoạn văn 1</p>
+    <p id="zone02">Đoạn văn 2</p>
+    <div style="font-size: 10px;">
+        <p id="zone03">Đoạn văn 3</p>
+    </div>
+</body>
+</html>
